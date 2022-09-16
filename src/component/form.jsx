@@ -12,14 +12,12 @@ const Form = () => {
             </div>
             <div className='flex flex-col'>
                 <label className='font-bold' htmlFor="desc">Description</label>
-                <textarea placeholder="Description about something you're gonna do..." className='rounded-md placeholder:text-white bg-mountainMeadow text-white resize-none px-4 py-2' name="desc" id="desc" cols="30" rows="7" onChange={(e)=> dataAPI.functions.changeInputHandle(e)} value={dataAPI.todo.desc}></textarea>
+                <textarea placeholder="Description about something you're gonna do..." className='rounded-md placeholder:text-white bg-mountainMeadow text-white resize-none px-4 py-2 scrollbar-thin scrollbar-thumb-cello scrollbar-track-loafer overflow-y-scroll scrollbar-thumb-rounded-md scrollbar-track-rounded-md' name="desc" id="desc" cols="30" rows="7" onChange={(e)=> dataAPI.functions.changeInputHandle(e)} value={dataAPI.todo.desc}></textarea>
             </div>
             <button className='mt-4 bg-cello rounded-md py-2 font-bold hover:bg-blue-700 text-white' onClick={()=>{
-                if(!dataAPI.isUpdate && dataAPI.todo.id != -1){
-                    dataAPI.functions.submitHandle()
-                    dataAPI.functions.resetTodo()
-                }
-            }}>Add</button>
+                 dataAPI.functions.submitHandle()
+                 dataAPI.functions.resetTodo()
+            }}>{dataAPI.isUpdate ? 'Update' : 'Add'}</button>
         </div>
     )
 }
