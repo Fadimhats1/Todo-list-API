@@ -2,20 +2,26 @@
   "todos": [
     {
       "id": 1663307975392,
-      "title": "dimasas",
-      "desc": "dfsadf",
+      "title": "dimas anjay mabar",
+      "desc": "jadi dimas anjay mabar",
       "isDone": false
     },
     {
       "id": 1663307978548,
-      "title": "asdfsdfasd",
-      "desc": "sadfsadfsad",
+      "title": "kyva gaming",
+      "desc": "anjay kyva gaming",
       "isDone": false
     },
     {
       "id": 1663308310833,
-      "title": "kurnia",
-      "desc": "kurnia",
+      "title": "kurnia karisma agung samiadjie",
+      "desc": "kurnia anjay",
+      "isDone": false
+    },
+    {
+      "id": 1663308431415,
+      "title": "nanti belajar react lagi",
+      "desc": "jadi abis pulang dari derrick, belajar react dan besoknya kalo gak males gass ngipen terus minggu depan ngipen cf day 1 dan day 2 di clas h terus siangnya cabut ke cf sambil cosplay jadi orihara izaya",
       "isDone": false
     }
   ]

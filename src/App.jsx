@@ -51,6 +51,7 @@ const App = () => {
       isDone: false,
     };
     setTodo(todoDataDefault);
+    setIsUpdate(false);
   }
 
   function editHandle(dataTodo){
@@ -90,6 +91,7 @@ const App = () => {
     if (!isUpdate)
       newTodo["id"] = new Date().getTime();
     newTodo[e.target.name] = e.target.value;
+    console.log(newTodo)
     setTodo(newTodo);
   }
 
